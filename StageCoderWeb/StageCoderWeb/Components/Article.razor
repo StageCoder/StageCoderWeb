@@ -1,0 +1,10 @@
+﻿<article class="mx-auto col-9 col-xl-6 pt-3">
+    @ChildContent
+
+</article>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}
+
