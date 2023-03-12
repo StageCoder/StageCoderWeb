@@ -38,15 +38,23 @@ jobs:
  
       - name: Change base-tag in index.html from / to StageCoderWeb
         run: (Get-content -path '${{ env.PUBLISH_DIR }}/index.html') -replace '<base href="/" />', '<base href="/StageCoderWeb/"/>' | Out-File -FilePath '${{ env.PUBLISH_DIR }}/index.html'
+      
+      - name: Change css to include StageCoderWeb
+        run: (Get-content -path '${{ env.PUBLISH_DIR }}/css/app.css') -replace 'url(Autobahn.ttf)', 'url(StageCoderWeb/Autobahn.ttf)"/>' | Out-File -FilePath '${{ env.PUBLISH_DIR }}/css/app.css'
+ 
+ 
  
         # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. 
         # Allow files and folders starting with an underscore.
       - name: Add .nojekyll file
         run: touch ${{ env.PUBLISH_DIR }}/.nojekyll
-        
+      
         # copy index.html to 404.html to serve the same file when a file is not found this makes deep linking possible
       - name: copy index.html to 404.html
         run: cp ${{ env.PUBLISH_DIR }}/index.html ${{ env.PUBLISH_DIR }}/404.html
+      
+      
+      
       
       #Add .giattributes file so all files are handled as binary
       - name: Add .giattributes
