@@ -1,2 +1,2 @@
 # StageCoderWeb
-The website for StageCoderf
+The website for StageCoder
