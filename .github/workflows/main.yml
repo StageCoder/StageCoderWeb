@@ -31,16 +31,13 @@ jobs:
         with:
           dotnet-version: '7.0.x'
           include-prerelease: true
-          
-      - name: Install tools
-        run: dotnet workload install wasm-tools
       
       - name: Publish application
         run: dotnet publish -c Release StageCoderWeb/StageCoderWeb/StageCoderWeb.csproj
         
  
-      - name: Change base-tag in index.html from / to BlazorGitHubPagesDemo
-        run: (Get-content -path '${{ env.PUBLISH_DIR }}/index.html') -replace '<base href="/" />', '<base href="/ZXSpectrum/"/>' | Out-File -FilePath '${{ env.PUBLISH_DIR }}/index.html'
+      - name: Change base-tag in index.html from / to StageCoderWeb
+        run: (Get-content -path '${{ env.PUBLISH_DIR }}/index.html') -replace '<base href="/" />', '<base href="/StageCoderWeb/"/>' | Out-File -FilePath '${{ env.PUBLISH_DIR }}/index.html'
  
         # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. 
         # Allow files and folders starting with an underscore.
