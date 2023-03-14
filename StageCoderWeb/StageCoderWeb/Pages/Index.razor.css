@@ -4,3 +4,8 @@
     width:50%;
     max-width:300px;
 }
+
+.downloadbutton {
+    margin: 0 auto;
+    display: block;
+}
