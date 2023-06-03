@@ -2,9 +2,37 @@
 <PageTitle>StageCoder - PowerShell</PageTitle>
     <Article>
         <h1>PowerShell</h1>
-        Coming soon =D
-    </Article>
-    @code {
+        A PowerShell module for awesome on-stage terminal demos!<br /><br />
+        This module makes it possible to type out a command in the terminal, character by character, by pressing any button. 
+        The perfect tool for people showing code on stage, in a classroom, or a workshop.<br />
+    
+    <br /><br />
+    <img class="demo" src="StageCoderDemoPS1.gif" />
+    <br /><br />
+    <h2>Install:</h2>
+    Run the PowerShell command "<b>Install-Module StageCoder -Scope CurrentUser</b>"
+    <h2>Commands</h2>
+    <h3>Set-Demo</h3>
+    <code>Set-Demo [[-Demo] &lt;String[]&gt;] [[-Chord] &lt;String&gt;] [[-MinPause] &lt;Int32&gt;] [[-MaxPause] &lt;Int32&gt;]
+    [[-Timing] &lt;String&gt;] [&lt;CommonParameters&gt;]
+    </code><br /><br />
+    Set a list of commands to be executed as part of a demo. Also lets you set the timing of the demo.
+    <br /><br />
+    Example:<br />
+    <code>Set-Demo -Demo 'Import-Module -Name StageCoder', 'Get-Command -Module StageCoder', 
+        'Get-Help -Command Set-Demo' -Timing Instant -Chord 'Ctrl+Shift+D'</code>
+    <br />Set the demo to run three commands with instant timing and the chord Ctrl+Shift+D. 
+    Use the chord to start next command.<br />
+    <br /><br />
 
-    }
+    <h3>Reset-Demo</h3>
+    <code>Reset-Demo [[-Index] &lt;Int32&gt;] [&lt;CommonParameters&gt;]
+    </code><br /><br />
+    Reset the demo to the first command. If an index is specified, the demo will be reset to that command.
+    <br /><br />
+    Example:<br />
+    <code>Reset-Demo -Index 4</code>
+    <br />Reset demo index to 4<br />
+    <br /><br /><br />
+    </Article>
 
