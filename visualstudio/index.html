@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>StageCoderWeb</title>
+    <base href="/"/>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/app.css" rel="stylesheet"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+    <link rel="manifest" href="/site.webmanifest"/>
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
+    <meta name="msapplication-TileColor" content="#da532c"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <link href="StageCoderWeb.styles.css" rel="stylesheet"/>
+
+<!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
+<title>StageCoder - Visual Studio</title>
+<!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
+</head>
+
+<body>
+    <div id="app">
+<!-- %%-PRERENDERING-BEGIN-%% -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" b-5yx1ri8r8z><div class="container-fluid" b-5yx1ri8r8z><a class="navbar-brand" href="#" b-5yx1ri8r8z>StageCoder</a>
+        <button class="navbar-toggler" type="button" b-5yx1ri8r8z><span class="navbar-toggler-icon" b-5yx1ri8r8z></span></button>
+
+        <div class="collapse navbar-collapse" b-5yx1ri8r8z><ul class="navbar-nav me-auto" b-5yx1ri8r8z><li class="nav-item" b-5yx1ri8r8z><a class="nav-link active" href="#" b-5yx1ri8r8z>
+                        Home
+                        <span class="visually-hidden" b-5yx1ri8r8z>(current)</span></a></li>
+                <li class="nav-item" b-5yx1ri8r8z><a class="nav-link" href="visualstudio" b-5yx1ri8r8z>Visual Studio</a></li>
+                <li class="nav-item" b-5yx1ri8r8z><a class="nav-link" href="powershell" b-5yx1ri8r8z>PowerShell</a></li>
+                <li class="nav-item" b-5yx1ri8r8z><a class="nav-link" href="background" b-5yx1ri8r8z>Background</a></li>
+                <li class="nav-item" b-5yx1ri8r8z><a class="nav-link" href="contributors" b-5yx1ri8r8z>Contributors</a></li></ul></div></div></nav>
+
+<main class="container-fluid" b-x89n69by6d>
+    <article class="mx-auto col-9 col-xl-6 pt-3"><h1 b-tj0tprbiu5>Visual Studio</h1>
+    This extension is a collection of functions that makes your presentation more streamlined and easier to watch.
+    <h2 b-tj0tprbiu5>Snippets</h2>
+    This extension makes it possible to type out a snippet, character by character, by pressing any button. <br b-tj0tprbiu5>
+    This is the perfect extension for people showing code on stage, in a classroom, or a workshop.<br b-tj0tprbiu5>
+    <br b-tj0tprbiu5><br b-tj0tprbiu5>
+    <img class="demo" src="StageCoderDemo3.gif" b-tj0tprbiu5>
+    <br b-tj0tprbiu5><br b-tj0tprbiu5>
+    Steps:<br b-tj0tprbiu5>
+    1. Select some code<br b-tj0tprbiu5>
+    2. Right-click and select <strong b-tj0tprbiu5>Create snippet</strong><br b-tj0tprbiu5>
+    3. Name the snippet<br b-tj0tprbiu5>
+    4. Now type the name of the snippet in a comment in the code //Snippetname (most comment types work)<br b-tj0tprbiu5>
+    5. Make sure the cursor is on the same line as the comment
+    Press CTRL + TAB + TAB<br b-tj0tprbiu5>
+    The Extension now takes over, and you can press any button (except TAB) to type one character at a time.<br b-tj0tprbiu5>
+    6. To exit the extension, press TAB.<br b-tj0tprbiu5><br b-tj0tprbiu5>
+
+    The snippets are saved in a " Snippets" folder in the solution folder.<br b-tj0tprbiu5>
+
+    <h3 b-tj0tprbiu5>Commands</h3>
+    CTRL + TAB + TAB is the default key combination. However, you can remap it in Tools | Options | Keyboard.<br b-tj0tprbiu5>
+    In some cases, you need to remap it to make it work.
+    <br b-tj0tprbiu5><br b-tj0tprbiu5>
+    There are three commands:<br b-tj0tprbiu5>
+    <b b-tj0tprbiu5>StageCoder.Reloadsnippets</b><br b-tj0tprbiu5>
+    If you copy snippets or manipulate them outside the extension, this will reload the snippets.<br b-tj0tprbiu5><br b-tj0tprbiu5>
+    <b b-tj0tprbiu5>StageCoder.Replacecode</b><br b-tj0tprbiu5>
+    It will replace the comment with the snippet without typing each character.<br b-tj0tprbiu5><br b-tj0tprbiu5>
+    <b b-tj0tprbiu5>StageCoder.Typecode</b><br b-tj0tprbiu5>
+    It will enable you to press any button (except TAB) to type one character at a time taken from the snippet.
+    <br b-tj0tprbiu5>
+    <b b-tj0tprbiu5>StageCoder.ToggleCodeHighlight</b><br b-tj0tprbiu5>
+    It will toggle the code highlight <br b-tj0tprbiu5><br b-tj0tprbiu5>
+    <h3 b-tj0tprbiu5>Stream Deck</h3>
+    While presenting, we can also use a Stream Deck by using the "Visual Studio"-plugin by Nicollas R.<br b-tj0tprbiu5>
+    Adding the commands above can trigger the different commands by pressing the Stream Deck button.<br b-tj0tprbiu5><br b-tj0tprbiu5>
+    To configure the type command, do the following:<br b-tj0tprbiu5>
+    1. Install the Visual Studio plugin from the plugin store.<br b-tj0tprbiu5>
+    2. Drag <strong b-tj0tprbiu5>Execute Command</strong> to a button.<br b-tj0tprbiu5>
+    3. Add a Title (This can be anything)<br b-tj0tprbiu5>
+    4. Add a Command(Name) in this case <strong b-tj0tprbiu5>StageCoder.Typecode</strong><br b-tj0tprbiu5>
+    5. Command args can be used in three ways.<br b-tj0tprbiu5>
+    <strong b-tj0tprbiu5>Empty</strong> - Will use the current line in Visual Studio to figure out the snippet name.<br b-tj0tprbiu5>
+    <strong b-tj0tprbiu5>SnippetName</strong> - By supplying it with a snippet name, you can trigger that particular snippet.<br b-tj0tprbiu5>
+    <strong b-tj0tprbiu5>[clipboard]</strong> - Will take the current text on the clipboard and use that as a snippet.
+
+
+    <br b-tj0tprbiu5><br b-tj0tprbiu5><br b-tj0tprbiu5>
+    <h2 b-tj0tprbiu5>Highlighting code</h2>
+    The second function makes it possible to highlight code by blurring the rest of the code.
+    This is perfect for focusing on a specific part of the code while presenting.<br b-tj0tprbiu5><br b-tj0tprbiu5>
+    <img class="demo" src="Highlight.gif" b-tj0tprbiu5><br b-tj0tprbiu5><br b-tj0tprbiu5>
+    Almost everytime I use this function, someone comes up to me and asks what I am using. 
+    When toggling the highlighting it will close the currently open file and reopen it.<br b-tj0tprbiu5>
+    This does take a couple of seconds to do, but it is worth it.<br b-tj0tprbiu5>
+    So my recommendation is to have it running through your whole presentation.<br b-tj0tprbiu5>
+    I rarely turn it off, because it helps me to focus as well.
+    <br b-tj0tprbiu5>
+    <br b-tj0tprbiu5>
+    <br b-tj0tprbiu5></article></main>
+        
+<!-- %%-PRERENDERING-END-%% -->
+</div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+
+
+
+
+</body></html>
